@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: PhonePe Clone</title>
+
+	<!-- jQuery Mobile CSS -->
+	<link rel="stylesheet" href="themes/jquery.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+	<!-- jQuery + jQuery Mobile JS -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Page 1 -->
+	<div data-role="page" id="page1" data-theme="a">
+		<div data-role="header">
+			<h1>PhonePe</h1>
+		</div>
+
+		<div data-role="content">
+			<p>Transfer Money:</p>
+			<a href="#page2">
+				<img src="themes/images/toself.jpg" width="100">
+			</a>
+			<a href="#page3">
+				<img src="themes/images/toaccount.jpg" width="100">
+			</a>
+			<img src="themes/images/balance.png" width="100">
+
+			<div data-role="main">
+				<h2>Pay The Bills</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page 2 -->
+	<div data-role="page" id="page2" data-theme="b">
+		<div data-role="header">
+			<h1>PhonePe</h1>
+		</div>
+
+		<div data-role="content" style="width: 300px;">
+			<label for="mobile">Enter the No:</label>
+			<input type="text" id="mobile" placeholder="Enter the Mobile No:"/>	
+
+			<label for="amount">Enter the Amt:</label>
+			<input type="text" id="amount" placeholder="Enter the Amount"/>		
+
+			<button>Send</button>		
+		</div>
+	</div>
+
+	<!-- Page 3 -->
+	<div data-role="page" id="page3" data-theme="c">
+		<div data-role="header">
+			<h1>PhonePe</h1>
+		</div>
+
+		<div data-role="content" style="width: 300px;">
+			<label for="account">Enter the Account No:</label>
+			<input type="text" id="account" placeholder="Enter the Account No:"/>	
+
+			<label for="ifsc">Enter the IFSC No:</label>
+			<input type="text" id="ifsc" placeholder="Enter the IFSC No:"/>	
+
+			<label for="amt2">Enter the Amt:</label>
+			<input type="text" id="amt2" placeholder="Enter the Amount"/>		
+
+			<button>Send</button>	
+		</div>
+	</div>
+
+</body>
+</html>

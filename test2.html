@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>userlist</h1>
+  <ul id="userList"></ul>
+  <script>
+    let users=JSON.parse(localStorage.getItem("users"))||[];
+    let list = document.getElementById("userList");
+    users.forEach(u=>{
+        list.innerHTML += `<li>${u.name}-${u.email}-${u.number}</li>`;
+    });
+  </script>
+</body>
+</html>

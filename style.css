@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+  }
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    padding: 15px;
+  }
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
