@@ -5,7 +5,7 @@ const bodyParser=require('body-parser')
 const app=express()
 app.use(bodyParser.json());
 
-const MONGO_URL = "mongodb+srv://T400290497:23456789@cluster0.xnax9as.mongodb.net/student-api";
+const MONGO_URL = "mongodb+srv://username:password@cluster0.xnax9as.mongodb.net/database_name";
 
 mongoose.connect(MONGO_URL)
     .then(() => console.log(" MongoDB Connected"))
