@@ -5,7 +5,7 @@ const bodyParser=require('body-parser')
 const app=express()
 app.use(bodyParser.json());
 
-const MONGO_URL = "mongodb+srv://username:password@cluster0.xnax9as.mongodb.net/database_name";
+const MONGO_URL = "mongodb ulr :connect through vs code";
 
 mongoose.connect(MONGO_URL)
     .then(() => console.log(" MongoDB Connected"))
